@@ -1,17 +1,17 @@
-// import { ConnectWallet } from "@thirdweb-dev/react";
-import "./styles/Home.css";
+import './App.scss';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Pages/Home/Home';
+import ProfilePage from './Pages/ProfilePage/ProfilePage';
 
-export default function Home() {
+function App() {
   return (
-    <main className="main">
-      <div className="container">
-        <div className="header">
-          DRepo
-        </div>
-
-        <div className="grid">
-        </div>
-      </div>
-    </main>
-  );
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<ProfilePage />} />
+      </Routes>
+    </Router>
+  )
 }
+
+export default App;
