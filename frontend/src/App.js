@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/:profileName" element={<ProfilePage />} />
         <Route path="/profile/repo" element={<Repo />} />
         <Route path="/profile/repo/commit" element={<Commit />} />
       </Routes>
