@@ -3,6 +3,7 @@ import Navbar from "../../Components/NavBar/Navbar";
 import "./Repo.scss";
 
 const Repo = () => {
+
   return (
     <div>
       <Navbar />
@@ -10,19 +11,22 @@ const Repo = () => {
         <div className="repo-main">
           <div className="repo-header">
             <h2>Repo</h2>
-            <div className="publc">Public</div>
+            <div className="publc-badge">Public</div>
           </div>
           <div className="branch-dropdown">
             <div className="branch">
-              <select name="" id="">
+              <select className="dropdown">
                 <option value="main">main</option>
                 <option value="master">master</option>
               </select>
             </div>
-            <div className="code">
-              <button>Code</button>
+            <div className="Code">
+              <button className="code-btn">
+                Code
+              </button>
             </div>
-            <div className="file-list">
+          </div>  
+            <div className="files-list">
               <table>
                 <thead>
                   <tr>
@@ -57,33 +61,38 @@ const Repo = () => {
               <h2>Add new commit</h2>
               <div className="file-upload-container">
                 <div className="file-upload">
-                  <div className="drag-drop" id="dropzone">
+                  <div className="drag-drop-area" id="dropzone">
                     <span>Drag and Drop your files</span>
                     <input
                       type="file"
                       id="filepicker"
-                      name="filelist"
+                      name="fileList"
                       webkitdirectory=""
                       directory=""
-                    //   ref={fileInput}
+                      style={{ display: 'none' }}
+                     
                     />
-                    <button>Upload Directory</button>
+                    <button className="select-files"
+                    >Select Directory</button>
                   </div>
                 </div>
-                <input type="text" name="" id="" placeholder="Commit Massege" />
-                <button>Submit</button>
+                <div className="commit-section">
+                <input type="text" name="" id="commitMessage" placeholder="Commit Message" />
+                <button id="submitBtn">Submit</button>
+                </div>
               </div>
             </div>
           </div>
-          <div className="sidebar">
+          <div className="repo-sidebar">
             <div className="about">
-                <h3>About</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nihil ab inventore, pariatur eligendi quam maxime excepturi esse culpa repudiandae sequi, facilis soluta commodi et? Minima voluptate incidunt ut? Alias!</p>
+              <h3>About</h3>
+              <p>This project is an implementation of a basic blockchain in
+              JavaScript.</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    
   );
 };
 

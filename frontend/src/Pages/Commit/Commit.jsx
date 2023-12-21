@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../Components/NavBar/Navbar";
 import { useParams } from "react-router-dom";
+import "./Commit.scss";
 
 const commitData = [
   { id: 1, message: "Initial commit", author: "John Doe", date: "2023-01-01" },
