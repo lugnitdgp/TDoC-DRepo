@@ -16,6 +16,7 @@
     "http-browserify": "latest",
     "https": "npm:https-browserify",
     "https-browserify": "latest",
+    "jszip": "^3.10.1",
     "react": "^18.2",
     "react-dom": "^18.2",
     "react-router-dom": "^6.21.0",
