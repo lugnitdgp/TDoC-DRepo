@@ -45,7 +45,7 @@ const Home = () => {
         await window.eth_requestAccounts;
         const accounts = await web3.eth.getAccounts();
 
-        // console.log(accounts);
+        console.log(accounts);
         const result = await contract.methods.authenticateUser().call({from:accounts[0]});
         console.log(result);
 
