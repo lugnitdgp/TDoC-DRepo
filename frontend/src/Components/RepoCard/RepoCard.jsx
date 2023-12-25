@@ -1,24 +1,26 @@
-import React from "react";
-import "./RepoCard.scss";
-import { Link } from "react-router-dom";
+import React from 'react'
+import './RepoCard.scss'
+import { Link } from 'react-router-dom'
 
-const RepoCard = ({profileName,repoName}) => {
-    return(
-        <Link to = {`/${profileName}/${repoName}`}>
-            <div className="repo-card-2">
-                <div className="repo-card-2-header">
-                    <h3 className="repo-card-2-name">{repoName}</h3>
-                    <p className="repo-card-2-description">This is a new Project</p>
-                </div>
-                <div className="repo-card-2-footer">
-                    <span className="repo-card-2-stat">Forked from lugnitdgp/TDoC</span>
-                    <div className="repo-card-2-language">
-                        <span className="repo-card-2-language-badge">Javascript</span>
-                    </div>
-                </div>
-            </div>
-        </Link>
-    )
+const RepoCard = ({ profileName, repoName }) => {
+  return (
+    <Link to = {`/${profileName}/${repoName}`}>
+      <span className='repocard'>
+        <div className="header">
+          <h3 className='name'>{repoName}</h3>
+          <span className="type-container">
+            <span className='type'>Public</span>
+          </span>
+        </div>
+        <div className="language-container">
+          <span className="dot-container">
+            <div className="dot"></div>
+          </span>
+          <span className='language'>JavaScript</span>
+        </div>
+      </span>
+    </Link>
+  )
 }
 
-export default RepoCard;
+export default RepoCard

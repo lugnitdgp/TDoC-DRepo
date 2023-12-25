@@ -1,14 +1,12 @@
-$navbar-background-color: #414666;
 $bg: #27283D;
 $bgSoft: #414666;
-$navbar-height: 140px;
-$navbar-padding: 20px;
-$navbar-max-width: 1440px;
-$search-max-width: 660px;
-
-
 
 $textBasic: #FFFFFF;
-$textSoft: #A9B4C2;
+$textSoft: #A9BAC2;
 $textNeon: #27E5FF;
+
 $font: 'Poppins', sans-serif;
+
+*{
+    color: $textBasic;
+}
