@@ -1,29 +1,21 @@
 import React, { useState } from "react";
 import "./RepoCreation.scss";
-import Web3 from "web3";
-import { contractABI,contractAddress } from "../../contractConfig";
+import { CreateProject, object } from '../../serviceFile.js';
 
-const RepoCreation = ({profilename, onClose,setRepositories}) => {
+const RepoCreation = ({ profilename, onClose, setRepositories }) => {
 
     const [repoName, setRepoName] = useState('');
 
     const handleCreateRepo = async () => {
-        if(window.ethereum){
-            const web3 = new Web3(window.ethereum);
-            const contract = new web3.eth.Contract(contractABI,contractAddress);
-      
-            try{
-              await window.eth_requestAccounts;
-              const accounts = await web3.eth.getAccounts();
-              await contract.methods.CreateProject(repoName).send({from:accounts[0]})
-              setRepositories((repo) => [...repo,repoName])
 
-              onClose();
-      
-            }catch(error){
-              console.log(error);
-            }
-          }
+        try {
+            await CreateProject(repoName);
+            setRepositories((repo) => [...repo, repoName]);
+            onClose();
+        }
+        catch (error) {
+            console.log(error);
+        }
     }
 
     return (
@@ -41,12 +33,12 @@ const RepoCreation = ({profilename, onClose,setRepositories}) => {
                         type="text"
                         placeholder="Enter Repository Name"
                         className="text-white"
-                        value = {repoName}
+                        value={repoName}
                         onChange={(e) => setRepoName(e.target.value)}
                     />
                 </div>
                 <div className="button-container">
-                    <button onClick={handleCreateRepo}>Create Repository</button>
+                    <button disabled={repoName.trim().length==0} onClick={handleCreateRepo} id="createBtn">Create Repository</button>
                     <button className="cancel" onClick={onClose}>Cancel</button>
                 </div>
             </div>

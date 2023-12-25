@@ -5,7 +5,7 @@ const ProfileCard = ({profilename}) => {
   return (
     <div className="profile-card">
       <div className="profile-card-header">
-        <img src="../../profile.jpg" alt= "" className="profile-picture"/><br />
+        <img src="../../../logo512.png" alt= "" className="profile-picture"/><br />
         <h3 className="profile-name"><span>{profilename}</span></h3>
         
       </div>

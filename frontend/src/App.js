@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/:profileName" element={<ProfilePage />} />
         <Route path="/:profile/:repo" element={<Repo />} />
-        <Route path="/profile/repo/commit" element={<Commit />} />
+        <Route path="/:profile/:repo/commit" element={<Commit />} />
       </Routes>
     </Router>
   )
