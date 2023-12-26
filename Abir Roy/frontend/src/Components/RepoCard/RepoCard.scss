@@ -1,0 +1,79 @@
+@import '../../style.scss';
+
+$cardWidth: 600px;
+$cardHeight: 150px;
+$borderColor: lighten($color: $bgSoft, $amount: 40);
+
+.repocard {
+    width: $cardWidth;
+    height: $cardHeight;
+    border: solid 3px $borderColor;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+    margin: 20px 20px;
+}
+
+.header {
+    margin: auto;
+    width: 95%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2px;
+
+    .name {
+        font-family: Arial, Helvetica, sans-serif;
+        color: $textNeon;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .type-container {
+        width: 22%;
+        height: 50%;
+        border: solid 2px $borderColor;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+
+        .type {
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+        }
+    }
+}
+
+.language-container {
+    width: 200px;
+    height: 20px;
+    margin: 0px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+
+    .language {
+        font-size: 24px;
+    }
+
+    .dot-container {
+        display: inline-block;
+        width: 20px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+
+        border: none;
+        border-radius: 50%;
+
+        background-color: yellow;
+    }
+
+}

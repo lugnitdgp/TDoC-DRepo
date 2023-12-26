@@ -1,0 +1,126 @@
+@import '../../style.scss';
+
+.home-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: $bg;
+}
+
+.left-content{
+    flex: 1;
+    margin-left: 100px;
+}
+
+.right-content{
+
+    flex: 1 1;
+    margin-right: 100px;
+
+    .img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+.maintext{
+    font-family: $font;
+    font-size: 64px;
+    color: $textBasic;
+}
+
+.subtext{
+    display: flex;
+    flex-direction: column;
+    font-family: $font;
+    font-size: 64px;
+    font-weight: bolder;
+    color: $textNeon;
+}
+
+.description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $bg;
+    color: $textSoft;
+    font-size: 32px;
+}
+
+.btn-container{
+    box-sizing: border-box;
+    max-width: 500px;
+    height: 50px;
+    margin: 20px 0;
+
+    .input-field{
+        box-sizing: border-box;
+        width: 400px;
+        height: 50px;
+        padding: 10px 10px;
+        font-size: 18px;
+
+        color: $textBasic;
+
+        border: solid 1px $textBasic;
+    }
+
+    .input-field:focus{
+        border: none;
+        box-shadow: 0px 0px 5px 4px $textNeon;
+    }
+}
+
+.btn{
+    margin: 25px 0px;
+    width: 100px;
+    height: 40px;
+
+    color: $textNeon;
+    font-size: 20px;
+    background-color: darken($color: $bg, $amount: 8);
+    outline-style: ridge;
+    outline-width: 3px;
+    outline-color: darken($color: $bg, $amount: 8);
+    outline-offset: 0px;
+    border: none;
+    box-shadow: 0px 0px 5px 5px $textSoft;
+
+}
+
+.btn:hover{
+    background: darken($color: $bg, $amount: 6);
+}
+
+.btn:active{
+    transform: scale(0.9, 0.9);
+    box-shadow: 0px 0px 5px 4px $textNeon;
+    color: $textBasic;
+    background-color: darken($color: $bg, $amount: 10);
+}
+
+.signin-text{
+    color: $textBasic;
+    font-size: 18px;
+
+    height: 40px;
+
+    .sign-in{
+        box-sizing: border-box;
+        text-decoration: none;
+        color: lighten($color: $textNeon, $amount: 10);
+        margin: 10px;
+    }
+
+    .sign-in:hover{
+        text-shadow: 1px 1px 2px;
+    }
+
+    .sign-in:active{
+        text-shadow: none;
+        font-style: italic;
+        color: darken($color: $textNeon, $amount: 10); 
+    }
+}
