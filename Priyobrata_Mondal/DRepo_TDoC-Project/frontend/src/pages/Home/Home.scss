@@ -1,0 +1,183 @@
+@import '../../styles/global.scss';
+
+// *{
+// background-color: $bg;
+// font-size: $fontSize;
+// color: $textBasic;
+// }
+
+// nav{
+//     background-color: $bgSoft;
+//     height: 100px;
+//     width: 100%;
+//     font-size: 3rem;
+//     padding: 0;
+//     margin: 0;
+// }
+
+// .main-container{
+//     width: 100%;
+//     display: flex;
+//     flex-direction: row;
+// }
+// .landing-text{
+//     min-width: max-content;
+//     max-width: 50%;
+//     display: inline-flex;
+//     flex-direction: column;
+//     border: 1px solid red;
+//     padding: 2rem 3rem;
+// }
+
+// h1{
+//     font-size: 3rem;
+// }
+
+// p{
+//     font-size: 2rem;
+// }
+
+*{
+    background-color: $bg;
+    // background-image: url(../../../images/landing-bgDark.mp4);
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: $bg;
+    height: 80dvh;
+  }
+  
+  .left-content {
+    flex: 1;
+    margin-left: 100px;
+  }
+  
+  .maintext {
+    font-family: $font;
+    font-size: 64px;
+    color: $textBasic;
+    margin: 2rem 0;
+  }
+  
+  .subtext {
+    display: flex;
+    flex-direction: column;
+    font-family: $font;
+    font-size: 64px;
+    font-weight: bold;
+    color: $textNeon;
+  }
+  
+  .description {
+    font-family: $font;
+    font-size: 20px;
+    color: $textSoft;
+  }
+  
+  .btn-container {
+    margin-top: 20px;
+  }
+  
+  .placeholder {
+    width: 400px;
+    height: 50px;
+    margin-bottom: 10px;
+    border: 2px solid $textNeon;
+    border-radius: 10px;
+    font-size: 20px;
+    color: $textSoft;
+    padding: 8px 10px; 
+  }
+  
+  .input-field {
+    width: 400px;
+    height: 50px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    border: 2px solid $textNeon;
+    border-radius: 10px;
+    font-size: 20px;
+    color: $textBasic;
+    padding: 8px 10px;
+    }
+    
+  
+  .signin-text {
+    margin-top: 30px;
+    font-family: $font;
+    font-size: 18px;
+    color: $textSoft
+  }
+  
+  .signin-text a {
+    color: $textNeon; 
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .signin-text a:hover {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: 85%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .btn {
+    margin-top: 10px;
+    padding: 5px;
+    height: 50px;
+    width: 200px;
+    background-color: $textNeon;
+    color: $textBasic;
+    border: none;
+    border-radius: 5px;
+    font-family: $font;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: $textNeon;
+  }
+
+  .btn:active {
+    background-color: $textNeon;
+  }
+  
+  .btn[disabled] {
+    opacity: 0.5; 
+    cursor: not-allowed;
+  }
+  
+  .btn:hover:not([disabled]) {
+    background-color: darken($textNeon, 15%);
+  }
+
+  .btn:active:not([disabled]) {
+    background-color: darken($textNeon, 30%);
+  }
+  
+  .right-content {
+    height: 100%;
+    flex: 1 1;
+    margin-right: 100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sign-in{
+    background-color: $bg;
+  }

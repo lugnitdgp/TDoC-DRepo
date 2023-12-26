@@ -1,0 +1,106 @@
+@import '../../styles/global.scss';
+
+*{
+    background-color: $bg;
+}
+
+.box {
+  display: flex;
+//   gap: 10rem;
+  height: 80vh;
+  width: 100%;
+  flex: 1;
+  margin: 0;
+}
+.user-content {
+  display: flex;
+  // align-items: center;
+//   margin-top: 30px;
+  background-color: $bg;
+  position: relative;
+  width: 70%;
+  margin: 0;
+}
+
+.left-content {
+  flex: 1;
+}
+
+.repo-content {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  flex-direction: column;
+}
+
+.repo-card-container{
+  height: 80%;
+    overflow-y: auto;
+}
+
+.repo-area{
+    width: 100%;
+    padding: 1.5rem 3rem;
+    height: 100%;
+}
+
+.search-and-button-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 1rem 0.5rem 1rem 0.5rem;
+  width: 100%;
+}
+
+.reposearch-container {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 10px;
+//   margin-bottom: 15px;
+}
+
+.reposearch-bar {
+    width: 40vw;
+    height: 20px;
+    padding: 8px;
+    padding-left: 20px;
+    border-radius: 20px;
+    background-color: $bgSoft;
+    border: 2px solid $textSoft;
+    font-family: $font;
+    font-weight: 30px;
+    font-size: $fontSize;
+    color: $textBasic;
+//   width: 40vw;
+//   height: 40px;
+//   // padding: 10px;
+//   border: 2px solid $textSoft;
+//   border-radius: 20px;
+//   background-color: transparent;
+//   font-family: $font;
+//   font-size: 20px;
+//   color: $textBasic;
+}
+
+.button {
+  width: max-content;
+  height: max-content;
+  background-color: $baseGreen;
+  font-family: $font;
+//   font-size: 20px;
+font-size: 1rem;
+  font-weight: normal;
+  color: $textBasic;
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  cursor: pointer;
+  margin: 0 1.5rem;
+}
+
+.button:hover {
+  background-color: lighten($baseGreen, 5%);
+}
+.button:active {
+  background-color: darken($baseGreen, 5%);
+}
