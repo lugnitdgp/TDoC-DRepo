@@ -1,0 +1,46 @@
+@import '../../styles/global.scss';
+
+
+*{
+    font-family: $font;
+    text-decoration: none;
+}
+.repocard{
+    // border-top: 1px solid $textSoft;
+    border-bottom: 1px solid $textSoft;
+    padding: 1rem 0.8rem;
+}
+.header{
+    color: $textSoft;
+    justify-content: space-between;
+}
+h3{
+    display: inline-block;
+    color: $textNeon;
+    font-size: 1.5rem;
+    margin: 0;
+}
+p{
+    margin: 1rem 0;
+}
+.type{
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
+border-radius: 20px;
+background-color: $textNeon;
+color: $textBasic;
+margin: 1rem 2rem;
+}
+.lang-colour{
+    display: inline-block;
+    height: 0.8rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+}
+.JavaScript{
+    background-color: yellow;
+}
+.Solidity{
+    background-color: rgb(39, 52, 104);
+}
