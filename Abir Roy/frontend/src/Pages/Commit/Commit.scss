@@ -1,0 +1,55 @@
+@import '../../style.scss';
+
+.commit-history-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+  h1 {
+    color: $textNeon;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  h2 {
+    color: $textSoft;
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  hr {
+    border: 1px solid #485865;
+  }
+  
+  }
+  
+  .commit-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .commit-item {
+    border: 1px solid #485865;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .commit-info {
+    flex-grow: 1;
+  }
+  
+  .commit-message {
+    color: aliceblue;
+    font-size: 1.75rem;
+    
+    margin-bottom: 8px;
+  }
+  
+  
+  .profile-name {
+    font-size: 14px;
+    color: #919499; 
+    font-weight: 300;
+    padding-top: 5px;
+  }
